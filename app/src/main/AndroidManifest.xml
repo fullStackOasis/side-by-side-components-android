@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SideBySideComponentsDemo">
         <activity
-            android:name=".RLEditTextActivity"
+            android:name=".RLImageViewActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

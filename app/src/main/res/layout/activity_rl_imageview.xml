@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/black"
+    tools:context=".RLActivity">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_alignTop="@id/tvExplain"
+        android:layout_alignBottom="@id/tvExplain"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="6dp"
+        android:gravity="center"
+        android:text="RelativeLayout"
+        android:src="@drawable/ic_baseline_check_24"/>
+    <!-- had to set app:cornerRadius="0dp" in order to remove slight rounding of corners -->
+    <TextView
+        android:id="@+id/tvExplain"
+        app:cornerRadius="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="0dp"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/imageView"
+        android:text="Now is the time for all good men to come to the aid of the country."
+        android:textColor="@color/purple_500"
+    />
+</RelativeLayout>
